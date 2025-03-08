@@ -283,6 +283,14 @@ header {
     gap: 2rem;
 }
 
+.question_describe {
+    width: 90dvw;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}  
+
 .question {
     background-color: rgb(32, 32, 32);
     border-radius: 1rem;

@@ -45,3 +45,21 @@ Object.keys(sectionMap).forEach((id) => {
   const section = document.getElementById(id);
   if (section) observer2.observe(section);
 });
+
+function onClick_Submit() {
+  window.open("https://forms.gle/gjWh7iCZ4aF3TRSn8");
+}
+
+document.querySelectorAll(".question").forEach(button => {
+  button.addEventListener("click", () => {
+    const description = button.nextElementSibling;
+
+    if (description.style.maxHeight) {
+      description.style.maxHeight = null;
+      description.style.opacity = "0";
+    } else {
+      description.style.maxHeight = description.scrollHeight + "px";
+      description.style.opacity = "1";
+    }
+  });
+});

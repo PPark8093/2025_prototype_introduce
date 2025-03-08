@@ -69,6 +69,7 @@ header {
 
 .header_buttons {
     display: none;
+    margin-left: 2rem;
     gap: 2rem;
 }
 
@@ -133,7 +134,7 @@ header {
 }
 
 #introduce_title h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
 }
 
@@ -182,7 +183,7 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     gap: 1rem;
 }
 
@@ -203,6 +204,7 @@ header {
 .about_icon h2 {
     color: #000;
     margin-bottom: 0.5rem;
+    font-size: lar;
 }
 
 .about_icon img {
@@ -220,7 +222,7 @@ header {
 
 #activity_pictures {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }

@@ -285,11 +285,12 @@ header {
 
 .question_describe {
     width: 90dvw;
+    margin: 0.5rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-}  
+}
 
 .question {
     background-color: rgb(32, 32, 32);
@@ -302,6 +303,10 @@ header {
     padding: 1rem 1rem;
 }
 
+.question:hover {
+    cursor: pointer;
+}
+
 .question h3 {
     display: flex;
     flex-direction: row;
@@ -312,6 +317,90 @@ header {
 }
 
 .question a {
+    color: var(--primary-color);
+}
+
+/* 연락 섹션 */
+#main_contact {
+    padding: 2rem 3rem;
+}
+
+.contact_intro {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+#contact_icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact_icon {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.contact_icon h2 {
+    color: black;
+    font-size: 1.3em;
+}
+
+.contact_icon p {
+    color: black;
+}
+
+.contact_image {
+    width: 20%;
+    height: 20%;
+    filter: invert(46%) sepia(84%) saturate(3636%) hue-rotate(336deg) brightness(94%) contrast(93%);
+}
+
+/* 제출 섹션 */
+#main_submit {
+    padding: 2rem 3rem;
+}
+
+#main_submit .titleBar {
+    margin-bottom: 1rem;
+}
+
+#submit_contents {
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+#submit_titleBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+#submit_titleBar h2 {
+    color: black;
+}
+
+#submit_icon {
+    width: 10%;
+    height: 10%;
+    border-radius: 100rem;
+}
+
+#submit_describe p {
+    color: black;
+}
+
+#submit_describe a {
     color: var(--primary-color);
 }
 

@@ -1,0 +1,286 @@
+/* CSS 변수 선언 */
+:root {
+    --primary-color: rgb(232, 69, 69);
+    --background-dark: rgb(30, 30, 30);
+    --text-color: #fff;
+    --font-family: 'S-CoreDream-3Light', sans-serif;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 리셋 및 폰트 적용 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    transition: all 0.25s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--background-dark);
+    overflow-x: hidden;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    padding: 0 1rem;
+    height: 5rem;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.header_icon {
+    display: none;
+}
+
+.header_icon button {
+    background-color: transparent;
+}
+
+.header_icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header_buttons {
+    display: none;
+    gap: 2rem;
+}
+
+.header_button {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header_button:hover {
+    color: var(--primary-color);
+}
+
+.header_apply_button button {
+    position: absolute;
+    right: 1.3rem;
+    top: 1.3rem;
+    background-color: var(--primary-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* 메인 소개 영역 */
+#main_introduce {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#introduce_background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(8px) brightness(50%);
+}
+
+#introduce_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 0;
+}
+
+#introduce_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    font-weight: 900;
+    width: 100vw;
+}
+
+#introduce_title h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ABOUT 섹션 */
+#main_about {
+    padding: 3rem 2rem 2rem;
+}
+
+#main_about p {
+    font-size: large;
+}
+
+.titleBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bar {
+    width: 4rem;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+#about_describes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #ccc;
+}
+
+.about_describe p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.about_title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* 아이콘 카드 */
+#about_icons {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+}
+
+.about_icon {
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.about_icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about_icon h2 {
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.about_icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* 활동 섹션 */
+#main_activity {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+#activity_pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.activity_picture {
+    background-color: #222;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity_picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.activity_picture .picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.activity_picture h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* 자주 묻는 질문 섹션 */
+#main_questions {
+    padding: 3rem 2rem;
+}
+
+.question_intro {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+    .header_buttons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #introduce_title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about_title {
+        font-size: 1.5rem;
+    }
+}
+  

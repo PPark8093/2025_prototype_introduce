@@ -264,15 +264,19 @@ header {
 
 /* 자주 묻는 질문 섹션 */
 #main_questions {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .question_intro {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.8em;
     color: #ccc;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #questions {
@@ -280,16 +284,23 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+}
+
+.question_and_answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .question_describe {
     width: 90dvw;
     margin: 0.5rem;
+    padding: 0rem 0.5rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    font-weight: 100;
 }
 
 .question {
@@ -300,7 +311,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 
 .question:hover {
@@ -313,7 +324,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9em;
+    font-size: 0.84em;
 }
 
 .question a {
@@ -322,15 +333,14 @@ header {
 
 /* 연락 섹션 */
 #main_contact {
-    padding: 2rem 3rem;
+    padding: 2rem 1.5rem;
 }
 
 .contact_intro {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.85em;
     color: #ccc;
-    margin-bottom: 2rem;
 }
 
 #contact_icons {
@@ -338,7 +348,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .contact_icon {
@@ -346,27 +356,29 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
 }
 
 .contact_icon h2 {
     color: black;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .contact_icon p {
     color: black;
+    font-size: 0.95em;
 }
 
 .contact_image {
-    width: 20%;
-    height: 20%;
+    width: 2.25rem;
+    height: 2.25rem;
     filter: invert(46%) sepia(84%) saturate(3636%) hue-rotate(336deg) brightness(94%) contrast(93%);
 }
 
 /* 제출 섹션 */
 #main_submit {
-    padding: 2rem 3rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
 }
 
 #main_submit .titleBar {
@@ -382,17 +394,17 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
 #submit_titleBar h2 {
     color: black;
+    font-size: medium;
 }
 
 #submit_icon {
-    width: 10%;
-    height: 10%;
+    width: 3rem;
     border-radius: 100rem;
 }
 
@@ -427,8 +439,58 @@ header {
         font-size: 1.5em;
     }
 
+    .question_intro {
+        font-size: 1em;
+    }
+
     .question h3 {
-        font-size: 1.17em;
+        font-size: 1.4em;
+    }
+
+    #main_contact {
+        padding: 2rem 4rem;
+    }
+
+    #contact_icons {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .contact_icon {
+        padding: 1rem;
+    }
+
+    .contact_icon h2 {
+        font-size: 1.4em;
+    }
+
+    .contact_icon p {
+        font-size: 1.2em;
+    }
+
+    .contact_image {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #main_submit {
+        padding: 1rem 4rem 2rem 4rem;
+    }
+
+    #submit_titleBar h2 {
+        font-size: 1.4em;
+    }
+
+    #submit_describe p {
+        font-size: 1.25em;
+    }
+
+    #submit_describe a {
+        font-size: 1.25em;
+    }
+
+    #submit_icon {
+        width: 5rem;
+        height: 5rem;
     }
 }
   

@@ -416,6 +416,26 @@ header {
     color: var(--primary-color);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer h3 {
+    color: rgb(173, 173, 173);
+    font-size: medium;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+footer h3 p {
+    font-weight: 900;
+}
+
 /* 반응형 디자인 */
 @media (min-width: 768px) {
     .header_buttons {
@@ -436,11 +456,11 @@ header {
     }
 
     .titleBar h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .question_intro {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .question h3 {
@@ -449,6 +469,10 @@ header {
 
     #main_contact {
         padding: 2rem 4rem;
+    }
+
+    .contact_intro {
+        font-size: 1.2em;
     }
 
     #contact_icons {
@@ -492,11 +516,10 @@ header {
         width: 5rem;
         height: 5rem;
     }
+}
 
-    @media (min-width: 1575px) {
-        #contact_icons {
-            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-        }
+@media (min-width: 1575px) {
+    #contact_icons {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     }
 }
-  

@@ -492,5 +492,11 @@ header {
         width: 5rem;
         height: 5rem;
     }
+
+    @media (min-width: 1575px) {
+        #contact_icons {
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        }
+    }
 }
   

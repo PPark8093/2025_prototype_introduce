@@ -201,7 +201,7 @@ header {
 }
 
 .about_icon:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1rem);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -299,8 +299,8 @@ header {
 
 .question_describe {
     width: 90dvw;
-    margin: 0.5rem;
-    padding: 0rem 0.5rem;
+    margin: 0.12rem;
+    padding: 0rem 1.5rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -316,7 +316,7 @@ header {
 .question {
     background-color: rgb(40, 40, 40);
     /* border-radius: 1rem; */
-    width: 90dvw;
+    width: 86.05dvw;
     /* box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.03); */
     display: flex;
     flex-direction: row;
@@ -326,6 +326,9 @@ header {
 
 .question:hover {
     cursor: pointer;
+    /* transform: translateY(-5px); */
+    scale: 1.05;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .question h3 {
@@ -370,6 +373,11 @@ header {
     padding: 0.5rem 0.6rem;
 }
 
+.contact_icon:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    scale: 1.05;
+}
+
 .contact_icon h2 {
     color: #e0e0e0;
     font-size: 1.1em;
@@ -398,6 +406,11 @@ header {
 #submit_contents {
     background-color: rgb(40, 40, 40);
     padding: 1rem;
+}
+
+#submit_contents:hover {
+    scale: 1.05;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #submit_titleBar {

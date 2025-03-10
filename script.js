@@ -53,16 +53,23 @@ function onClick_Submit() {
 document.querySelectorAll(".question").forEach(button => {
   button.addEventListener("click", () => {
     const description = button.nextElementSibling;
+    const arrow = button.querySelector(".question_arrow"); // 해당 버튼 안의 화살표 선택
+    const margin_a = button.parentElement.querySelector(".question_describe");
 
     if (description.style.maxHeight) {
       description.style.maxHeight = null;
       description.style.opacity = "0";
+      arrow.innerText = "▼";
+      margin_a.style.margin = "0.12rem";
     } else {
       description.style.maxHeight = description.scrollHeight + "px";
       description.style.opacity = "1";
+      arrow.innerText = "▲";
+      margin_a.style.margin = "0.5rem";
     }
   });
 });
+
 
 function onClick_Goto(where) {
 
@@ -80,7 +87,7 @@ function onClick_Goto(where) {
       var location = document.querySelector("#main_questions").offsetTop;
       break;
     case "contact":
-      var location = document.querySelector("#main_contact").offestTop;
+      var location = document.querySelector("#main_contact").offsetTop;
       break;
     case "submit":
       var location = document.querySelector("#main_submit").offsetTop;

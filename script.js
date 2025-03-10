@@ -63,3 +63,35 @@ document.querySelectorAll(".question").forEach(button => {
     }
   });
 });
+
+function onClick_Goto(where) {
+
+  switch (where) {
+    case "home":
+      var location = document.querySelector("#main_introduce").offsetTop;
+      break;
+    case "about":
+      var location = document.querySelector("#main_about").offsetTop;
+      break;
+    case 'activity':
+      var location = document.querySelector("#main_activity").offsetTop;
+      break;
+    case "question":
+      var location = document.querySelector("#main_questions").offsetTop;
+      break;
+    case "contact":
+      var location = document.querySelector("#main_contact").offestTop;
+      break;
+    case "submit":
+      var location = document.querySelector("#main_submit").offsetTop;
+      break;
+    default:
+      break;
+  }
+
+  console.log(location);
+
+  if (where != "home") location -= 80; // 5rem = 80px
+
+  window.scrollTo({top: location, behavior: 'smooth'});
+}

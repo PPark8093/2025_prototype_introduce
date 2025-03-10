@@ -192,7 +192,7 @@ header {
 }
 
 .about_icon {
-    background-color: #f0f0f0;
+    background-color: rgb(40, 40, 40);
     border-radius: 1rem;
     padding: 1rem;
     text-align: center;
@@ -206,15 +206,20 @@ header {
 }
 
 .about_icon h2 {
-    color: #000;
+    color: #e0e0e0;
     margin-bottom: 0.5rem;
     font-size: large;
 }
 
+.icon_icon {
+    filter: invert(100%) sepia(0%) saturate(3942%) hue-rotate(176deg) brightness(109%) contrast(76%);
+}
+
 .about_icon img {
-    width: 70%;
-    height: 70%;
     object-fit: contain;
+    width: 80%;
+    height: 80%;
+    margin: 1rem;
 }
 
 /* 활동 섹션 */
@@ -303,6 +308,11 @@ header {
     font-weight: 100;
 }
 
+.question_describe a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .question {
     background-color: rgb(32, 32, 32);
     border-radius: 1rem;
@@ -352,7 +362,7 @@ header {
 }
 
 .contact_icon {
-    background-color: #f0f0f0;
+    background-color: rgb(40, 40, 40);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -361,12 +371,12 @@ header {
 }
 
 .contact_icon h2 {
-    color: black;
+    color: #e0e0e0;
     font-size: 1.1em;
 }
 
 .contact_icon p {
-    color: black;
+    color: #e0e0e0;
     font-size: 0.95em;
 }
 
@@ -386,7 +396,7 @@ header {
 }
 
 #submit_contents {
-    background-color: #f0f0f0;
+    background-color: rgb(40, 40, 40);
     padding: 1rem;
 }
 
@@ -399,7 +409,7 @@ header {
 }
 
 #submit_titleBar h2 {
-    color: black;
+    color: #e0e0e0;
     font-size: medium;
 }
 
@@ -409,7 +419,7 @@ header {
 }
 
 #submit_describe p {
-    color: black;
+    color: #e0e0e0;
 }
 
 #submit_describe a {
@@ -515,6 +525,13 @@ footer h3 p {
     #submit_icon {
         width: 5rem;
         height: 5rem;
+    }
+
+    .about_icon img {
+        object-fit: contain;
+        width: 50%;
+        height: 50%;
+        margin: 1rem;
     }
 }
 

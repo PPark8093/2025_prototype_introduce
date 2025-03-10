@@ -16,9 +16,9 @@
       </button>
     </div>
     <nav class="header_buttons">
-      <button class="header_button header_home">홈</button>
-      <button class="header_button header_about">프로토타입이란?</button>
-      <button class="header_button header_activity">활동</button>
+      <button class="header_button header_home" onclick="onClick_Goto('home')">홈</button>
+      <button class="header_button header_about" onclick="onClick_Goto('about')">프로토타입이란?</button>
+      <button class="header_button header_activity" onclick="onClick_Goto('activity')">활동</button>
       <button class="header_button header_others">그 외</button>
     </nav>
     <div class="header_apply_button">
@@ -53,15 +53,15 @@
         <div id="about_icons">
           <div class="about_icon">
             <h2>프로그래밍</h2>
-            <img src="./assets/programming_icon.png" alt="프로그래밍 아이콘" />
+            <img class="icon_icon" src="./assets/programming_icon.png" alt="프로그래밍 아이콘" />
           </div>
           <div class="about_icon">
             <h2>생기부</h2>
-            <img src="./assets/document_plus_icon.png" alt="생기부 아이콘" />
+            <img class="icon_icon" src="./assets/document_plus_icon.png" alt="생기부 아이콘" />
           </div>
           <div class="about_icon">
             <h2>기계공학</h2>
-            <img src="./assets/engineering_icon.png" alt="기계공학 아이콘" />
+            <img class="icon_icon" src="./assets/engineering_icon.png" alt="기계공학 아이콘" />
           </div>
           <div class="about_icon">
             <h2>즐거움</h2>
@@ -134,7 +134,7 @@
                 <h3><a>5.</a> 지원은 어떻게 할 수 있어?</h3>
                 <p>▼</p>
             </button>
-            <p class="question_describe">아래 링크를 클릭해서 동아리 지원에 대해 자세히 읽어본 후 지원해줘!</p>
+            <p class="question_describe">아래 링크를 클릭해서 동아리 지원에 대해 자세히 읽어본 후 지원해줘!<br><a onclick="onClick_Goto('submit')">프로토타입 지원하기</a></p>
         </div>
       </div>
     </section>

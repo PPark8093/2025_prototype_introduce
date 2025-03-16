@@ -441,8 +441,9 @@ header {
     width: 2rem;
     height: 2rem;
     object-fit: contain;
-    padding: 1rem;
-    padding-right: 0;
+    /* padding: 1rem; */
+    padding: 0;
+    margin-left: 0.2rem;
     filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(334deg) brightness(91%) contrast(109%);
     /* border-radius: 100rem; */
 }
@@ -558,6 +559,9 @@ footer h3 p:hover {
     #submit_icon {
         width: 5rem;
         height: 5rem;
+        padding: 1rem;
+        padding-right: 0;
+        margin-left: 0;
     }
 
     .about_icon img {

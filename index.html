@@ -22,7 +22,7 @@
       <button class="header_button header_others" onclick="onClick_Goto('question')">그 외</button>
     </nav>
     <div class="header_apply_button">
-      <button id="apply_button" onclick="onClick_Submit()">지원하기</button>
+      <button id="apply_button" onclick="onClick_Goto('submit')">지원하기</button>
     </div>
   </header>
 
@@ -190,18 +190,18 @@
         <div id="submit_contents">
             <div id="submit_titleBar">
                 <img id="submit_icon" src="./assets/submit_icon.png" alt="구글 폼 아이콘">
-                <h2>지원서 작성하기</h2>
+                <h2>지원하기</h2>
             </div>
             <div id="submit_describe">
-                <p>프로토타입 본 지원서는 아래 구글 폼에서 작성해줘!</p>
-                <a href="https://forms.gle/gjWh7iCZ4aF3TRSn8" target="_blank">지원서 작성하기</a>
+                <p>프로토타입 지원은 3월19일(수) 이후 일괄 신청할 때 해줘!</p>
+                <!-- <a href="https://forms.gle/gjWh7iCZ4aF3TRSn8" target="_blank">지원서 작성하기</a> -->
             </div>
         </div>
     </section>
   </main>
 
   <footer>
-    <h3>© Copyright <p>PROTOTYPE</p> @_pparks</h3>
+    <h3>© Copyright <p onclick="onClick_Goto('home')">PROTOTYPE</p> @_pparks</h3>
   </footer>
   <script src="./script.js"></script>
 </body>

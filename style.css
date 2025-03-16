@@ -318,6 +318,10 @@ header {
     text-decoration: underline;
 }
 
+.question_describe a:hover {
+    cursor: pointer;
+}
+
 .question {
     background-color: rgb(40, 40, 40);
     /* border-radius: 1rem; */
@@ -467,6 +471,10 @@ footer h3 {
 
 footer h3 p {
     font-weight: 900;
+}
+
+footer h3 p:hover {
+    cursor: pointer;
 }
 
 /* 반응형 디자인 */

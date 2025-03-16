@@ -385,6 +385,7 @@ header {
 .contact_icon:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     scale: 1.05;
+    cursor: pointer;
 }
 
 .contact_icon h2 {
@@ -420,6 +421,7 @@ header {
 #submit_contents:hover {
     scale: 1.05;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 #submit_titleBar {
